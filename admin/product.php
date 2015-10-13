@@ -591,20 +591,23 @@ include('header.php');
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="language">Language</label>
+                        
                         <div class="controls">
                          <?php $languages = explode(',',$Language);
+                               $language_arr = array("English", "Malay", "Chinese"); 
                           
                           ?>
                           <select id="language" name="Language[]" multiple="multiple" class="" style="">
-                               <?php
-									foreach($languages as $lang){
-                                                                         
-									?>  
-				<?php if($id!=""){ ?>
-                                <option value=""></option>
-                                <?php }else{}?>
-                              <option value="English" <?php if($lang=="English"){ ?> selected="selected" <?php }?>>English</option>
-                              <?php } ?>
+                              <?php if($id!=""){ ?>
+                                    <option value="">----------Select Language----------</option>
+                                    <?php }else{ ?>
+                                    <option value="" selected="selected">----------Select Language----------</option>
+                                <?php }?>
+                                 
+				<?php foreach($language_arr as $lang){ ?>
+                              <option value="<?php echo $lang;?>" <?php if(in_array($lang,$languages)){ ?> selected="selected" <?php }?>><?php echo $lang ?></option>
+                                                          
+                               <?php } ?>
                            </select>                              
 <!--                           <input class="input-xlarge" id="prv_language" name="prv_language" type="hidden" value="<?php echo $Language; ?>">-->
                         </div>
