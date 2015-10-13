@@ -7,7 +7,7 @@
                 $Server = "localhost";
                 $User = "root";
                 $Password = "";
-                $DB = "singaporedeals4u_new";
+                $DB = "SDFU_new";
                 $DomainName = "http://localhost/singaporedeals4u_new";
         break;
 				case "singaporedeals4u.com":
