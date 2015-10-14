@@ -777,7 +777,7 @@ if (isset($_GET['sort']) && $_GET['sort'] != "") {
                                                 </div>
                                             <?php } ?>
                                             <div class="modal-footer">
-                                                <a href="single_tour.php?id=<?php echo $pid; ?>" class="btn_1" >View product reviews</a>
+                                                <a href="single_tour.php?id=<?php echo $pid; ?>?proid=<?php echo $product_title; ?>" class="btn_1" >View product reviews</a>
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
                                             </div>
