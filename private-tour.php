@@ -297,21 +297,21 @@ include_once 'inc/config.inc.php';
                             <div class="col-md-4 col-sm-4 inquiry">
                              <div class="f-item">
                                 <label for="your_name"><i class="icon-calendar-7"></i> Travelling Date From<span class="required">*</span></label>            
-                                <input  class="date-pick form-control" data-date-format="M d, D" type="text" name="tr_date_from" required>
+                                <input  class="date-pick form-control" data-date-format="M d, D" type="text" name="tr_date_from" id="tr_date_from" value="" required>
                             </div>
                             </div>
                              
                             <div class="col-md-4 col-sm-4 inquiry">
                             <div class="f-item">
                                 <label for="your_name"><i class="icon-calendar-7"></i> Travelling Date To<span class="required">*</span></label>            
-                                <input  class="date-pick form-control" data-date-format="M d, D" type="text" name="tr_date_to" required>
+                                <input  class="date-pick form-control" data-date-format="M d, D" type="text" name="tr_date_to" id="tr_date_to" value="" required>
                             </div>
                             </div>
                              
                             <div class="col-md-4 col-sm-4 inquiry">
                             <label for="your_name">Number of Night</label>
                             <div class="numbers-row">
-                                <input type="text" value="1" id="adults" class="qty2 form-control" name="number-of-night" style="pointer-events: none;">
+                                <input type="text" value="1" id="adults" class="qty2 form-control nights" name="number-of-night" style="pointer-events: none;">
                             </div>
                             </div>
                              
@@ -508,6 +508,8 @@ Special occasion? Relaxing vs. fast-paced trip? What make this your dream trip?<
                     </div>
 
                 </form>
+                    
+                    
             </div>
             </div><!-- End col-md-8 -->
 
@@ -522,7 +524,73 @@ Special occasion? Relaxing vs. fast-paced trip? What make this your dream trip?<
             </div><!-- End col-md-4 -->
         </div><!-- End row -->
     </div><!-- End container -->
-
+    <script type="text/javascript" src="js/date.js"></script>
+    	<script type="text/javascript">
+            $(document).ready(function(){
+                $('#tr_date_from').datepicker().on('changeDate', function(ev) {
+                
+    		var minutes = 1000*60;
+    		var hours = minutes*60;
+    		var days = hours*24;
+                //var date_from = $('#tr_date_from').val();
+                var date_frm = $("#tr_date_from").datepicker('getDate');
+                var date_to = $('#tr_date_to').datepicker('getDate');
+                
+                day  = date_frm.getDate(),  
+                month = date_frm.getMonth() + 1,              
+                year =  date_frm.getFullYear();
+                var dat_frm = month + '/' + day + '/' + year;
+                
+                
+                day_to  = date_to.getDate(),  
+                month_to = date_to.getMonth() + 1,              
+                year_to =  date_to.getFullYear();
+                var dat_to = month_to + '/' + day_to + '/' + year_to;
+                
+                var foo_date1 = getDateFromFormat(dat_frm, "M/d/y");
+    		var foo_date2 = getDateFromFormat(dat_to, "M/d/y");
+                   
+    		var diff_date = Math.round((foo_date2 - foo_date1)/days);
+                if(diff_date < 0 ){
+                    diff_date = 0;
+                }
+    		//alert("Diff date is: " + diff_date );
+                $('.nights').val(diff_date);
+            });
+            $('#tr_date_to').datepicker().on('changeDate', function(ev) {
+                
+    		var minutes = 1000*60;
+    		var hours = minutes*60;
+    		var days = hours*24;
+                //var date_from = $('#tr_date_from').val();
+                var date_frm = $("#tr_date_from").datepicker('getDate');
+                var date_to = $('#tr_date_to').datepicker('getDate');
+                
+                day  = date_frm.getDate(),  
+                month = date_frm.getMonth() + 1,              
+                year =  date_frm.getFullYear();
+                var dat_frm = month + '/' + day + '/' + year;
+                
+                
+                day_to  = date_to.getDate(),  
+                month_to = date_to.getMonth() + 1,              
+                year_to =  date_to.getFullYear();
+                var dat_to = month_to + '/' + day_to + '/' + year_to;
+                
+                var foo_date1 = getDateFromFormat(dat_frm, "M/d/y");
+    		var foo_date2 = getDateFromFormat(dat_to, "M/d/y");
+                   
+    		var diff_date = Math.round((foo_date2 - foo_date1)/days);
+                if(diff_date < 0 ){
+                    diff_date = 0;
+                }
+    		//alert("Diff date is: " + diff_date );
+                $('.nights').val(diff_date);
+            });
+            
+            });
+    	</script>
+    
     <!-- Start footer -->
     <?php include_once 'footer.php'; ?>
     <!-- End footer -->
