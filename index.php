@@ -696,7 +696,7 @@ unset($_SESSION['book']);
         <!---<a href="single_tour.php?id=<?php echo $wid; ?>" class="btn_1" >View product reviews</a>-->
 
                     <?php if ($_SESSION['Auth_user'] == TRUE) { ?>
-                                            <a class="btn_1" href="rating.php?id=<?php echo $wid; ?>">Leave a Review</a>
+                                            <a class="btn_1" href="rating.php?id=<?php echo $wid; ?>?prod=<?php echo $product_title; ?>">Leave a Review</a>
         <?php } else { ?>
                                             <a class="btn_1" href="login.php">Leave a Review</a>
                     <?php } ?> 	
@@ -786,6 +786,7 @@ unset($_SESSION['book']);
                         if (intval($r_promo_adult_price) != 0) {
                             $r_adult_price = $r_promo_adult_price;
                         }
+                        $p_title = stripcslashes(Decode($rows['title']));
                         ?>	
 
                         <div class="banner colored">
@@ -794,7 +795,7 @@ unset($_SESSION['book']);
                             <p>
                                 <?php echo substr($rows['short_description'], 0, 200); ?>
                             </p>
-                            <a href="<?= site_url('single_tour.php') ?>?id=<?php echo $rows['id']; ?>" class="btn_1 white">Read More</a>
+                            <a href="<?= site_url('single_tour.php') ?>?id=<?php echo $rows['id']; ?>?prod=<?php echo $p_title; ?>" class="btn_1 white">Read More</a>
                         </div>
                             <?php }
                         } ?>
