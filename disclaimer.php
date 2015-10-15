@@ -67,13 +67,16 @@
                     </ul>
                 </div>
                 
-                <div class="box_style_2">
-                    <i class="icon_set_1_icon-57"></i>
-                    <h4>Need <span>Help?</span></h4>
-                    	<a href="tel://006590886618" class="phone">+65 8161 5060</a>
-			<a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a>
-			<!--<small>Monday to Friday 9.00am - 7.30pm</small>-->
-                </div>
+                <div class="box_style_2 zopim">
+                        <i class="icon_set_1_icon-57"></i>
+                        <h4>Need <span>Help?</span></h4>
+                        <a href="tel://006590886618" class="phone">+65 8161 5060</a>
+                        <a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a>
+                        <!--<small>Monday to Friday 9.00am - 7.30pm</small>-->
+                        <div class="col-md-12 zopim_ifram">                            
+                          <iframe src="zopim.html" scrolling="no" style="border:none; margin-top: 20px; width:254px; height:338px;" ></iframe>
+                        </div>
+                    </div>
 		</aside><!--End aside -->
           <div class="col-lg-9 col-md-9" id="faq">
        		<h2>Disclaimer</h2>
