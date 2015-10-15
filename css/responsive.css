@@ -108,6 +108,8 @@ a#phone:before, a#email_footer:before{
 	display: block;
 	text-align:center;
 }
+.zopim{height:215px;}
+.zopim_ifram{ display: none;}
 header#plain #top_line{margin-top:25px;}
 .margin_div {margin-top:10%;}
 .price_list .button{
