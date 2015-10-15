@@ -196,6 +196,7 @@ Author URI: http://themeforest.net/user/Ansonika/
 	margin:0;
 	margin:30px 0 0 0;
 }
+
 .general_icons ul li{
 	display:inline-block;
 	text-align:center;
@@ -3613,3 +3614,5 @@ line-height:3em !important;
 {
     color:#e04f67;font-size:13px;
 }
+.zopim{padding-left: 10px !important; height:565px;}
+.zopim_ifram{ padding-left: 10px !important; }
