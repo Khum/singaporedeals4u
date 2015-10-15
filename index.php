@@ -64,12 +64,16 @@ unset($_SESSION['book']);
                 e.parentNode.insertBefore($, e)
             })(document, 'script');
         </script>
-<!--        <script>
+        
+      <script>
         $zopim(function(){
-        $zopim.livechat.window.setOffsetHorizontal(1020);
-        $zopim.livechat.window.setOffsetVertical(100);
+        // $zopim.livechat.window.setOffsetHorizontal(1020);
+        // $zopim.livechat.window.setOffsetVertical(100);
+         $zopim.livechat.window.setColor('#e04f67');            
+            $zopim.livechat.window.setTitle('Need Help?');
+           
         });
-        </script>-->
+        </script>
         <!--End of Zopim Live Chat Script-->
         
 
