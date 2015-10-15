@@ -514,13 +514,16 @@ Special occasion? Relaxing vs. fast-paced trip? What make this your dream trip?<
             </div><!-- End col-md-8 -->
 
             <div class="col-md-4 col-sm-4 inquiry">
-                <div class="box_style_4">
-                    <i class="icon_set_1_icon-57"></i>
-                    <h4>Need <span>Help?</span></h4>
-                    <a href="tel://006581615060" class="phone">+65 8161 5060</a>
-                    <!--<small>Monday to Friday 9.00am - 7.30pm</small>-->
-                    <a href="mailto:Sales@SingaporeDeals4u.com" id="email_footer">Sales@SingaporeDeals4u.com</a>
-                </div>
+                <div class="box_style_4 zopim">
+                        <i class="icon_set_1_icon-57"></i>
+                        <h4>Need <span>Help?</span></h4>
+                        <a href="tel://006590886618" class="phone">+65 8161 5060</a>
+                        <a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a>
+                        <!--<small>Monday to Friday 9.00am - 7.30pm</small>-->
+                        <div class="col-md-12 zopim_ifram" style="margin-left: 46px !important;">                            
+                          <iframe src="zopim.html" scrolling="no" style="border:none; margin-top: 20px; width:254px; height:338px;" ></iframe>
+                        </div>
+                    </div>
             </div><!-- End col-md-4 -->
         </div><!-- End row -->
     </div><!-- End container -->
