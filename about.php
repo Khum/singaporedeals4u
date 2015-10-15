@@ -45,19 +45,19 @@ $product_data = $rows_data['data'];
     <!-- Mobile menu overlay mask -->
 
     <!-- Header================================================== -->
-    <header ><?php include_once 'header.php'; ?></header><!-- End Header -->
+    <header id="plain"><?php include_once 'header.php'; ?></header><!-- End Header -->
     
 <!--<section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">-->
-<section class="parallax-window" data-parallax="scroll" data-image-src="img/home_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
+<!--<section class="parallax-window" data-parallax="scroll" data-image-src="img/home_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
     <div class="parallax-content-1">
         <div class="animated fadeInDown">
         <h1>About us</h1>
         <p></p>
         </div>
     </div>
-</section><!-- End Section -->
+</section> End Section -->
     
-<div id="position">
+<!--<div id="position">
     	<div class="container">
                 	<ul>
                     <li><a href="#">Home</a></li>
@@ -65,9 +65,9 @@ $product_data = $rows_data['data'];
                     <li>Page active</li>
                     </ul>
         </div>
-</div><!-- End Position -->
+</div> End Position -->
 
-<div class="container margin_60">
+<div class="container margin_60 margin_div">
 
 	<div class="main_title">
         <h2>Some <span>good </span>reasons</h2>
