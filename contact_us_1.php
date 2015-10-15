@@ -116,6 +116,9 @@ include_once 'inc/config.inc.php';
 						</div>
 					</div>
 				</form>
+                                <br>
+				<div class="col-lg-12" style="height:320px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.659684227762!2d103.83464322392514!3d1.2754210817047553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da196daff89c05%3A0xe323603128d70bca!2s1B+Cantonment+Rd%2C+Singapore+085201!5e0!3m2!1sen!2s!4v1435833122088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 			</div>
 		</div><!-- End col-md-8 -->
         
@@ -138,13 +141,16 @@ We also widely use Viber, Line, WhatsApp and WeChat so feel free to add +65 8161
 					<li><a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a></li>
 				</ul>
 			</div>
-			<div class="box_style_4">
-				<i class="icon_set_1_icon-57"></i>
-				<h4>Need <span>Help?</span></h4>
-				<a href="tel://006590886618" class="phone">+65 8161 5060</a>
-				<a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a>
-				<small></small>
-			</div>
+			<div class="box_style_4 zopim">
+                        <i class="icon_set_1_icon-57"></i>
+                        <h4>Need <span>Help?</span></h4>
+                        <a href="tel://006590886618" class="phone">+65 8161 5060</a>
+                        <a href="mailto:Sales@SingaporeDeals4u.com">Sales@SingaporeDeals4u.com</a>
+                        <!--<small>Monday to Friday 9.00am - 7.30pm</small>-->
+                        <div class="col-md-12 zopim_ifram" style="margin-left: 46px !important;">                            
+                          <iframe src="zopim.html" scrolling="no" style="border:none; margin-top: 20px; width:254px; height:338px;" ></iframe>
+                        </div>
+                    </div>
 		</div><!-- End col-md-4 -->
 	</div><!-- End row -->
 </div><!-- End container -->
