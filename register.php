@@ -40,7 +40,7 @@ include_once 'inc/config.inc.php';
     <!-- Mobile menu overlay mask -->
 
      <!-- Header================================================== -->
-    <header ><?php include_once 'header.php'; ?></header><!-- End Header -->    
+    <header  id="plain"><?php include_once 'header.php'; ?></header><!-- End Header -->    
     <section id="hero" class="login">
     	<div class="container">
         	<div class="row">
