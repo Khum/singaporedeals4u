@@ -47,7 +47,7 @@ $re_id = $_POST['re_id'];
     <!-- Mobile menu overlay mask -->
 
     <!-- Header================================================== -->
-    <header ><?php include_once 'header.php'; ?></header><!-- End Header -->
+    <header id="plain"><?php include_once 'header.php'; ?></header><!-- End Header -->
     
     <section id="hero" class="login">
     	<div class="container">
