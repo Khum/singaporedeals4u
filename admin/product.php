@@ -413,22 +413,40 @@ include('header.php');
         </div>
         <div class="box-content">
             <?php
-            if($_GET["id"]!= ""){
-                $prid = $_GET["id"];
+                                        
+            if($sort_order!= ""){
+                $prid = $sort_order;
                 
-                $rows_prev = "select * from product where id < ".$prid." ORDER BY id DESC LIMIT 1";
+                $rows_prev = "select * from product where sort_order < ".$prid." ORDER BY sort_order DESC LIMIT 1";
                 $query_prev= mysql_query($rows_prev);                
                 while ($prev = mysql_fetch_assoc($query_prev)) {
                     $prev = $prev['id'];
                     echo "<div style='float:left;width:49%;'><p style='text-align: right; margin-right:5px'><a href='product.php?id=".$prev."' class='btn btn-info'>Prev</a></p></div>"; 
                 }
                 
-                $rows_next = "select * from product where id > ".$prid." ORDER BY id ASC LIMIT 1";
+                $rows_next = "select * from product where sort_order > ".$prid." ORDER BY sort_order ASC LIMIT 1";
                 $query_next= mysql_query($rows_next);                
                 while ($next = mysql_fetch_assoc($query_next)) {
                     $next = $next['id'];
                     echo "<div style='float:left; width:49%;'><p style='margin-left:5px; text-align: left' ><a href='product.php?id=".$next."' class='btn btn-info'>Next</a></p></div>"; 
                 }
+//                if($_GET["id"]!= ""){
+//                $prid = $_GET["id"];
+//                
+//                $rows_prev = "select * from product where id < ".$prid." ORDER BY id DESC LIMIT 1";
+//                $query_prev= mysql_query($rows_prev);                
+//                while ($prev = mysql_fetch_assoc($query_prev)) {
+//                    $prev = $prev['id'];
+//                    echo "<div style='float:left;width:49%;'><p style='text-align: right; margin-right:5px'><a href='product.php?id=".$prev."' class='btn btn-info'>Prev</a></p></div>"; 
+//                }
+//                
+//                $rows_next = "select * from product where id > ".$prid." ORDER BY id ASC LIMIT 1";
+//                $query_next= mysql_query($rows_next);                
+//                while ($next = mysql_fetch_assoc($query_next)) {
+//                    $next = $next['id'];
+//                    echo "<div style='float:left; width:49%;'><p style='margin-left:5px; text-align: left' ><a href='product.php?id=".$next."' class='btn btn-info'>Next</a></p></div>"; 
+//                }
+                //------------------------------------------------------------------------------------
 //                $photo_sql = "(SELECT * FROM product WHERE id > ".$prid." ORDER BY id ASC LIMIT 1)";
 //                $photo_sql.= " UNION (SELECT * FROM product WHERE id < ".$prid." ORDER BY id ASC LIMIT 1)";
 //                
@@ -467,10 +485,11 @@ include('header.php');
 //                              
 //                echo "<div class''><p style='text-align: center'><a href='product.php?id=".$prev."' class='btn btn-info' ".$prevbtn_dis.">Prev</a>";  
 //                echo "&nbsp;&nbsp;<a href='product.php?id=".$next."' class='btn btn-info' ".$nextbtn_dis.">Next</a></p></div>"; 
+//                //----------------------------------------------------------------------------------------------------------
             }else{
                 
             }
-            ?>
+//            ?>
             <form action="" id="product_form" name="product_form" method="post" class="form-horizontal" enctype="multipart/form-data" style="clear: both">
                 <input name="id" id="id" value="<?php echo $id; ?>" type="hidden" />
                 <fieldset>
