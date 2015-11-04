@@ -76,7 +76,7 @@
                                         </div>
                                         <a id="forgot_pw" href="<?php echo site_url('forgot_password.php');?>">Forgot password?</a>
                                         <input type="submit" name="" value="Sign in" id="customer_signin" class="button_drop">
-                                        <a href="<?= site_url('register.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
+                                        <a href="<?= site_url('signup.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
                                         </div>
                                         
 <!--                                        <div id="agent-form" style="display:none">
@@ -107,7 +107,7 @@
                                         </div>
                                         <a id="forgot_pw" href="<?php echo site_url('forgot_password.php');?>">Forgot password?</a>
                                         <input type="submit" name="" value="Sign in" id="agent_signin" class="button_drop">
-                                        <a href="<?= site_url('register.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
+                                        <a href="<?= site_url('signup.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
                                         </div>-->
                                     </div>                                    
                                 </div><!-- End Dropdown access -->
@@ -146,7 +146,7 @@
                                         </div>
                                         <a id="forgot_pw" href="<?php echo site_url('forgot_password.php');?>">Forgot password?</a>
                                         <input type="submit" name="" value="Sign in" id="customer_signin" class="button_drop">
-                                        <a href="<?= site_url('register.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
+                                        <a href="<?= site_url('signup.php') ?>"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
                                         </div>
                                         -->
                                         <div id="agent-form">
@@ -177,7 +177,7 @@
                                         </div>
                                         <a id="forgot_pw" href="<?php echo site_url('forgot_password.php');?>">Forgot password?</a>
                                         <input type="submit" name="" value="Sign in" id="agent_signin" class="button_drop" style="pointer-events: none;">
-                                        <a href="<?= site_url('register.php') ?>" style="pointer-events: none;"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
+                                        <a href="<?= site_url('signup.php') ?>" style="pointer-events: none;"><input type="submit" name="" value="Sign up" id="Sign_up" class="button_drop outline"></a>
                                         </div>
                                     </div>                                    
                                 </div><!-- End Dropdown access -->
@@ -287,7 +287,7 @@
                                              <li<?php echo (basename($_SERVER['PHP_SELF']) == 'blog_right_sidebar.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>blog_right_sidebar.php">Blog</a></li>
                                             <li<?php echo (basename($_SERVER['PHP_SELF']) == 'blog.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>blog.php">Blog left sidebar</a></li>
                                             <li<?php echo (basename($_SERVER['PHP_SELF']) == 'login.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>login.php">Login</a></li>
-                                            <li<?php echo (basename($_SERVER['PHP_SELF']) == 'register.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>register.php">Register</a></li>
+                                            <li<?php echo (basename($_SERVER['PHP_SELF']) == 'signup.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>signup.php">Register</a></li>
                                             <li<?php echo (basename($_SERVER['PHP_SELF']) == 'invoice.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>invoice.php">Invoice</a></li>
                                             <li<?php echo (basename($_SERVER['PHP_SELF']) == '404.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>404.php">404 Error page</a></li>                                            
                                             <li<?php echo (basename($_SERVER['PHP_SELF']) == 'timeline.php' ? ' class="active"':'') ?>><a href="<?=site_url('');?>timeline.php">Tour timeline</a></li>
