@@ -51,7 +51,7 @@ if (!empty($_POST)) {
        exit;
     }
     
-   //enqueueMsg($message, "success", "register.php");
+   //enqueueMsg($message, "success", "signup.php");
 }
 
 
