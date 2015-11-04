@@ -71,7 +71,7 @@ $re_id = $_POST['re_id'];
                                     <a href="forgot_password.php">Forgot Password?</a>
                                 </p>
                                 <input type="button" name="signin" value="Sign in" id="signin_input" class="btn_full">
-                                <a href="register.php " class="btn_full_outline">Register</a>
+                                <a href="signup.php " class="btn_full_outline">Register</a>
                                 
                                  
                                  
